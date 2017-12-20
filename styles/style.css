@@ -53,10 +53,7 @@ body{
   background: -moz-linear-gradient(top right,#5399db,#5153d6);
   background: linear-gradient(top right,#5399db,#5153d6);
 }
-.widget{
-  /* position: fixed; */
-  /* width: 200px; */
-}
+
 #hero{
   padding: 10px;
   margin-bottom: 30px;
@@ -188,6 +185,5 @@ footer a:visited{
   .btn:hover{
     transform: translate(0, 0px);
     box-shadow: 1px 1px #333;
-
   }
 }
