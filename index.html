@@ -1,54 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Devvit Home Page</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css  ">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Standard meta tags -->
+  <meta name="keywords" content="devvit.io devvitIO webdevelpment "> 					<!-- key for web search-->
+  <title>Devvit.io</title>
+  <meta name="description" content="An open organization that started from people's need for a place where self-taught developers could ask questions, collaborate, and learn new technologies together in a professional environment.">				<!-- description of the website -->
+  <meta name="author" content="DevvitIO">	<!-- author of the website -->
+  <!-- LINK -->
   <link rel="stylesheet" href="styles/style.css">
+  <!-- OTHER -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+  <!-- FavIcon-->
+  <link rel="shortcut icon" href="img/fav.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/180fav.png">
 
-  <script type="text/javascript" src="https://tor020.github.io/livejs/live.js"></script>
+
 </head>
-
 <body>
-  <nav>
-    <h1 class='is-size-2'>Devvit.io</h1>
-  </nav>
-  <a id="github-link-back" href="https://github.com/DevvitIO">
-    View on Github
-    <i class="fa fa-github"></i>
-  </a>
-  <section class='main'>
 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/discord-widget/latest/discord-widget.min.js"></script>
-    <script type="text/javascript">
-        discordWidget.init({
-            serverId: '364473157312315394',
-            title: 'Devvit.io',
-            join: true,
-            alphabetical: true,
-            theme: 'dark',
-            hideChannels: true,
-            showAllUsers: true,
-            allUsersDefaultState: false
-        });
-        discordWidget.render();
-    </script>
-    <div class="discord-widget"></div>
+  <!-- *************** -->
+  <!-- HEADER  SECTION -->
+  <!-- *************** -->
+
+  <section id="hero">
+    <div class="section-inner">
+      <div>
+        <img src="https://avatars0.githubusercontent.com/u/32555830?s=200&v=4" alt="" class="profile-img" />
+        <h1 class="hero-title">Devvit.io</h1>
+        <p class="hero-desc inside">An open organization that started from people's need for a place where self-taught developers could ask questions, collaborate, and learn new technologies together in a professional environment.</p>
+      </div>
+      <ul class="nav">
+        <li><a href="https://www.reddit.com/r/Devvitio/" class="btn button-anim">Reddit</a></li>
+        <li><a href="https://discordapp.com/invite/EXHKR6" target="_blank" class="btn btn-discord button-anim">Join Discord </a></li>
+        <li><a href="https://github.com/DevvitIO" class="btn button-anim">Github</a></li>
+      </ul>
+    </div>
   </section>
 
+<!-- *************** -->
+<!-- PROJECT SECTION -->
+<!-- *************** -->
 
-  <footer id='footer' class='main'>
+  <section id="projects">
+    <h1 >Community Projects</h1>
+    <div class="proj-wrap center-w">
+      <!--   Multiplayer-Hangman   -->
+      <a class="proj-container bg-red" href="https://github.com/DevvitIO/Multiplayer-Hangman">
+        <div class="inside">
+          <p class="proj-title">Multiplayer-Hangman</p>
+          <p class="proj-descr">A collab project between a few Redditors with the purpose to learn new technologies as we go.</p>
+        </div>
+      </a>
+      <!--   ReallyAnnoyingDirectory   -->
+      <a class="proj-container bg-green" href="https://github.com/DevvitIO/ReallyAnnoyingDirectory">
+        <div class=" inside">
+          <p class="proj-title">ReallyAnnoyingDirectory</p>
+          <p class="proj-descr">Open collab for a directory of really 'awful' front-end pages.</p>
+        </div>
+      </a>
+      <!--   Lanflix   -->
+      <a class="proj-container bg-blue" href="https://github.com/DevvitIO/Lanflix">
+        <div class=" inside">
+          <p class="proj-title">Lanflix</p>
+          <p class="proj-descr">Netflix for your LAN</p>
+        </div>
+      </a>
+      <!--   CMS   -->
+      <a class="proj-container bg-purple" href="https://github.com/DevvitIO/CMS">
+        <div class=" piside">
+          <p class="proj-title">CMS</p>
+          <p class="proj-descr">A basic CMS mixed with a blogging software.</p>
+        </div>
+      </a>
+    </div>
+  </section>
 
+  <!-- *************** -->
+  <!-- FOOTER  SECTION -->
+  <!-- *************** -->
+  <footer>
+      <p>Created by: <a href="https://github.com/DevvitIO">Devvit.io</a></p>
+    <div class="discord-widget "></div>
   </footer>
+<!-- <script src="js/script.js" charset="utf-8"></script> -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/discord-widget/latest/discord-widget.min.js"></script>
 
+<script type="text/javascript">
 
-  <script src='scripts/main.js'></script>
+    discordWidget.init({
+         serverId: '364473157312315394',
+         title: 'Devvit.io',
+         join: true,
+         alphabetical: true,
+         theme: 'dark',
+         hideChannels: true,
+         showAllUsers: true,
+         allUsersDefaultState: false
+     });
+     discordWidget.render();
+ </script>
 </body>
-
 </html>

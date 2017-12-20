@@ -1,52 +1,193 @@
-/* Body Styles */
-  @import url('https://fonts.googleapis.com/css?family=Arimo|Varela+Round');
+/*
+  First code write by : Matteo Zanda
+  portfolio: https://gand988.github.io/portfolio/
 
-  
-  html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}a{text-decoration:none; color:inherit;}
-  h1,
-  h2,
-  strong {
-  color: #333;
-  }
-  
-  html {
+  Any one can contribuite to this work!!!
+
+  support: https://github.com/DevvitIO
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+   /* outline: 1px dotted red; */
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+/* ------------ */
+/* THEME COLORS PROJECT*/
+/* ------------ */
+
+.bg-red{
+  background-color: #df6c74;
+}
+.bg-green{
+  background-color: #40A798;
+}
+.bg-blue{
+  background-color: #63adf5;
+}
+.bg-purple{
+  background-color: #c575e4;
+}
+
+/* ------------ */
+/* mobile first */
+/* ------------ */
+body{
+  background: #5399db;
+  background: -webkit-linear-gradient(top right,#5399db,#5153d6);
+  background: -moz-linear-gradient(top right,#5399db,#5153d6);
+  background: linear-gradient(top right,#5399db,#5153d6);
+}
+.widget{
+  /* position: fixed; */
+  /* width: 200px; */
+}
+#hero{
+  padding: 10px;
+  margin-bottom: 30px;
+}
+#hero,
+.proj-wrap{
+  text-align: center;
+}
+.profile-img{
+  width: 150px;
+}
+.hero-title{
+  color: #fff;
+  font-size: 40px;
+}
+.hero-desc{
+  color: #fff;
+  display: inline-block;
+}
+ul.nav{
+  list-style: none;
+  padding: 0;
+  padding-top: 40px;
+  margin: 0;
+}
+.nav li{
+  display: inline-block;
+  margin: 0 2px;
+}
+.btn{
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 2px;
+  background-color: #1cad38;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.btn-discord{
+  padding: 20px 20px;
+  background-color: #7289da;
+}
+/* ------------ */
+/* PROJECT SECTION */
+/* ------------ */
+#projects{
   background-color: #fff;
-  font-size: 16px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  text-rendering: optimizeLegibility;
-  }
-  
-/* Main Section Content */
-  body {
-    color: #555;
-    font-family: 'Varela Round', sans-serif;
-    line-height: 1.5;
-    padding: 0em 0 1em 0;
-  }
-
-  nav{
-    margin-left:2em;
-  }
-
-  #github-link-back {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 1.2rem;
-    background:rgb(58, 156, 49);
-    color: white;
-    padding: 11px;
-    border-bottom:1px solid white;
-    transition:all .2s;
+  padding: 1px 0px 20px 0;
+  text-align: center;
 }
-
-#github-link-back:hover {
- 
-    border-bottom:5px solid green;
-    filter:hue-rotate(100deg);
+.inside{
+  max-width: 470px;
+  margin: 0 auto;
 }
+.proj-wrap{
+  display: flex;
+  flex-flow: row wrap;
+}
+.proj-container{
+  flex: auto;
+  width: 100%;
+  color: #fff;
+}
+.proj-title{
+  padding: 20px;
+  padding-bottom: 0;
+  font-size: 30px;
+  font-weight: 900;
+}
+.proj-descr{
+  padding: 20px;
+  padding-top: 0;
+  font-style: italic;
+  font-size: 18px;
+  font-family: Libre Baskerville,serif;
+}
+footer{
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+}
+footer p{
+  margin: 0;
+  padding: 40px 0;
+}
+footer a:link{
+  color: #1cad38;
+}
+footer a:visited{
+  display: inline-block;
+  color: #1cad38;
+}
+@media (min-width: 600px){
+  .discord-widget{
+    position: fixed;
+    width: 200px;
+    top:0;
+    left:0;
+  }
+  .nav li{
+    display: inline-block;
+    margin: 0 5px;
+  }
+  /* expand the project tile full-screen */
+  .proj-container{
+    width: 100%;
+  }
+}
+/* if res >= 900 */
+@media (min-width: 900px){
+  .center-w{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .btn{
+  transition: transform 0.5s linear,
+              box-shadow 0.5s linear;
+  }
+  .proj-container{
+    width: 49%;
+    margin:2.5px;
+    transition: transform 0.5s linear,
+                box-shadow 0.5s linear;
+  }
+  .proj-container:hover,
+  .btn{
+    transform: translate(0, -5px);
+    box-shadow: 5px 5px #333;
+  }
+  .btn:hover{
+    transform: translate(0, 0px);
+    box-shadow: 1px 1px #333;
 
-.discord-widget{
-  width:15%;
+  }
 }
