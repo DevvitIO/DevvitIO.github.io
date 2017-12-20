@@ -6,15 +6,13 @@
 
   support: https://github.com/DevvitIO
 */
-
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-
-   /* outline: 1px dotted red; */
 }
 
 body{
@@ -68,6 +66,7 @@ body{
 .hero-title{
   color: #fff;
   font-size: 40px;
+font-family: 'Nunito', sans-serif;
 }
 .hero-desc{
   color: #fff;
@@ -169,14 +168,14 @@ footer a:visited{
     margin: 0 auto;
   }
   .btn{
-  transition: transform 0.5s linear,
-              box-shadow 0.5s linear;
+  transition: transform 0.25s linear,
+              box-shadow 0.25s linear;
   }
   .proj-container{
     width: 49%;
     margin:2.5px;
-    transition: transform 0.5s linear,
-                box-shadow 0.5s linear;
+    transition: transform 0.25s linear,
+                box-shadow 0.25s linear;
   }
   .proj-container:hover,
   .btn{
@@ -189,3 +188,5 @@ footer a:visited{
 
   }
 }
+
+
