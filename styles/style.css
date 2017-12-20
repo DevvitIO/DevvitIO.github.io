@@ -146,7 +146,7 @@ footer a:visited{
   color: #1cad38;
 }
 @media (min-width: 600px){
-  .discord-widget{
+  .widget{
     position: fixed;
     width: 200px;
     top:0;
@@ -185,5 +185,6 @@ footer a:visited{
   .btn:hover{
     transform: translate(0, 0px);
     box-shadow: 1px 1px #333;
+
   }
 }
