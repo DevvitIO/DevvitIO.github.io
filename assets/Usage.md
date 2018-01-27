@@ -30,4 +30,3 @@ In short, the GitHub logos and Octocat represent only GitHub and should not be u
 
 Essentially, replace the words github and Octocat with Devvit.io and basically the same rules apply here.
  
- # Join the Discord and ask in chat for specific usage requests
