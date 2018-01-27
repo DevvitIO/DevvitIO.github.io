@@ -1,4 +1,4 @@
- Using The Devvit.io Logo
+# Using The Devvit.io Logo
 
 ## Join the Discord and ask in chat for specific usage requests
 
