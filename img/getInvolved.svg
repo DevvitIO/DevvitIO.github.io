@@ -1,0 +1,30 @@
+<?xml-stylesheet href="../css/svg.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="120 0 220 500" >
+  <defs>
+    <clipPath id="a">
+      <path d="M0 0h486.297v464.739H0z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)">
+    <text transform="translate(173.048 420.264)" font-family="Nunito" font-weight="400" font-size="24" fill="#191818">
+      Come Say Hello!
+    </text>
+    <text transform="translate(119.817 21.657)" font-family="Nunito" font-weight="400" font-size="20" fill="#333">
+      Devvit.io is an open source community
+    </text>
+    <text transform="translate(.12 105.722)" font-family="Nunito" font-weight="400" font-size="16" fill="#333">
+      There&apos;s no office, we collaborate remotely
+    </text>
+    <text transform="translate(140.411 229.154)" font-family="Nunito" font-weight="400" font-size="16" fill="#333">
+      We&apos;re a friendly bunch, getting involved is easy.
+    </text>
+    <text transform="translate(11.033 324.476)" font-family="Nunito" font-weight="400" font-size="16" fill="#333">
+      Can&apos;t contribute, but want the community?
+    </text>
+    <path d="M253.759 35.607c-18.557 26.55-129.904 29.25-134.028 54.45M120.113 127.272C108.942 185.375 346.326 165.589 386 206M386 242c-10 27-40.78 39.236-135.665 21.272-64.641-10.07-109.86-17.407-135.351-12.677-12.745 2.365-20.558 7.747-23.401 17.312-2.842 9.566-.714 23.315 6.423 42.415M318.909 368.359C297.105 344.974 179.217 356.614 119.731 335" fill="none" vector-effect="non-scaling-stroke" stroke="#000" stroke-linecap="square" stroke-miterlimit="3"/>
+    <path vector-effect="non-scaling-stroke" stroke="#000" stroke-linecap="square" stroke-miterlimit="3" d="M184.079 432.737h162.582M196.599 439.707h139.255M205.992 446.168h115.221M223.664 453.237h79.877M233.56 459.599h62.206"/>
+    <text transform="translate(69.107 388.513)" font-family="Nunito" font-weight="400" font-size="16" fill="#333">
+      No problem, there&apos;s no minimum contribution requirement.
+    </text>
+  </g>
+</svg>
