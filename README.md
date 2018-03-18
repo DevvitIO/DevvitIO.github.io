@@ -1,3 +1,7 @@
+# Making Changes to the Website
+
+If you'd like to make improvements / changes to the website, please refer to the Development branch [here](https://github.com/DevvitIO/Devvit_2.0)
+
 # Using The Devvit.io Logo
 
 ## Join the Discord and ask in chat for specific usage requests
