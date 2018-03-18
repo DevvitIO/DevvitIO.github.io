@@ -6,21 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Devvit.io</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32870014-10"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-32870014-10');
-</script>
   <link href="img/favicon.ico" rel="icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32870014-10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'UA-32870014-10');
+  </script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css  ">
   <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
@@ -38,48 +37,41 @@
       <h1 class="brand">Devvit.io</h1>
       <p class="subhead">An Open Source Community for Web Development</p>
 
-
-
     </section>
 
 
+    <div class="purpose">
+      <!-- BEGIN Purpose Section -->
 
-
-    <div class="purpose">  
 
       <h1> Who is Devvit for?</h1>
-      
-        <div>
-         <label class="cb1-label"> 
-            <input id="cb1" type="checkbox"> 
-          I am a Developer
-          </label>
-        </div>
 
-        <div >
-         <label class="cb2-label">  
-           <input id="cb2" type="checkbox">
-          I am able and willing to conduct myself in a professional manner
-          </label>
-        </div>
+      <div>
+        <label class="cb1-label">
+          <input id="cb1" type="checkbox"> I am a Developer
+        </label>
+      </div>
 
-    </div> 
-
-    
-      
-    <div class="getInvolved"> 
-
-  <p class="one">Devvit.io is an open source community</p>  
-  <p class="two">There's no office, we collaborate remotely</p>
-  <p class="three">We're a friendly bunch, getting involved is easy.</p>
-  <p class="four">Can't contribute, but want the community?</p>
-  <p class="five">No problem, there's no minimum contribution requirement.</p>
-  <h2 class="six">Come Say Hello!</h2>
+      <div>
+        <label class="cb2-label">
+          <input id="cb2" type="checkbox"> I am able and willing to conduct myself in a professional manner
+        </label>
+      </div>
 
 
-  
+    </div>
+    <!-- END Purpose Section -->
 
 
+    <div class="getInvolved">
+      <!-- BEGIN Get Involved - Discord Section -->
+
+      <p class="one">Devvit.io is an open source community</p>
+      <p class="two">There's no office, we collaborate remotely</p>
+      <p class="three">We're a friendly bunch, getting involved is easy.</p>
+      <p class="four">Can't contribute, but want the community?</p>
+      <p class="five">No problem, there's no minimum contribution requirement.</p>
+      <h2 class="six">Come Say Hello!</h2>
 
     </div>
 
@@ -87,45 +79,53 @@
 
     <div class="discord">
 
-      
-        <a class="btn" href="https://discord.gg/9MMbTde">Join Discord</a>
-      
+
+      <a class="btn" href="https://discord.gg/9MMbTde">Join Discord</a>
+
 
       <div class="widget">
+
         <div class="container">
-         <div class="discord-widget"></div>
+
+          <div class="discord-widget"></div>
         </div>
       </div>
 
-    </div> 
+    </div>
+    <!-- END Get Involved - Discord Section -->
 
 
-    <div class="projects"> 
+    <div class="projects">
+      <!-- BEGIN Projects Section -->
 
-        <h1>Community Projects</h1>
+      <h1>Community Projects</h1>
+
+      <div class="projectsContainer">
+        <!--   CMS   -->
 
         <div class="item1">
           <h2>CMS</h2>
           <p>A basic CMS mixed with a blogging software.</p>
           <a href="https://github.com/DevvitIO/CMS">Link To Github Repo</a>
         </div>
-        
 
+        <!--   ReallyAnnoyingDirectory   -->
 
         <div class="item2">
           <h2>ReallyAnnoyingDirectory</h2>
           <p>Open collab for a directory of really "awful" front-end pages.</p>
           <a href="https://github.com/DevvitIO/ReallyAnnoyingDirectory">Link To Github Repo</a>
         </div>
-        
 
-      
+        <!--   Lanflix   -->
+
         <div class="item3">
           <h2>Lanflix</h2>
           <p>Netflix for your LAN</p>
           <a href="https://github.com/DevvitIO/Lanflix">Link To Github Repo</a>
         </div>
 
+        <!-- Devvit Bot -->
 
         <div class="item4">
           <h2>Devvit Discord Bot</h2>
@@ -134,16 +134,22 @@
         </div>
 
 
-    </div>     
-</div>  
+
+      </div>
+      <!-- END Projects Section -->
+    </div>
+    <!-- END Projects Container -->
 
 
-  </div> 
+  </div>
+  <!-- END Grid Container -->
 
 
 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/discord-widget/latest/discord-widget.min.js"></script>
-    <script src="scripts/main.js"></script>
+
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/discord-widget/latest/discord-widget.min.js"></script>
+  <script src="scripts/main.js"></script>
 
 </body>
 
