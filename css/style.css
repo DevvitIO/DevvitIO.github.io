@@ -1,426 +1,291 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 body {
-  font-family : "Roboto", sans-serif;
-}
+  font-family: "Roboto", sans-serif; }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family : "Nunito", sans-serif;
-}
+h1, h2, h3, h4, h5 {
+  font-family: "Nunito", sans-serif; }
 
 span,
 input,
 form,
 p,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
+div, h1, h2, h3, h4, h5,
 ul,
 li,
 a {
-  margin : 0;
-}
+  margin: 0; }
 
-.landing,
-.purpose,
-.getInvolved,
-.discord,
-.projects {
-  display : flex;
-  flex-direction : column;
+.landing, .purpose, .getInvolved, .discord, .projects {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  align-items: center;
+  justify-content: center; }
 
-  padding : 2rem 1rem;
-
-  align-items : center;
-  justify-content : center;
-}
-
-.projects .projectsContainer .item1,
-.projects .projectsContainer .item2,
-.projects .projectsContainer .item3,
-.projects .projectsContainer .item4 {
-  display : flex;
-  flex-direction : column;
-  flex : 1;
-
-  min-width : 320px;
-  height : 25vh;
-  margin : 4% 4%;
-  padding : 15px;
-
-  text-align : center;
-
-  border-radius : 5px;
-  box-shadow : 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
-  align-items : center;
-  flex-basis : 35%;
-  justify-content : center;
-}
-.projects .projectsContainer .item1 h2,
-.projects .projectsContainer .item2 h2,
-.projects .projectsContainer .item3 h2,
-.projects .projectsContainer .item4 h2 {
-  margin-bottom : 1rem;
-}
-.projects .projectsContainer .item1 p,
-.projects .projectsContainer .item2 p,
-.projects .projectsContainer .item3 p,
-.projects .projectsContainer .item4 p {
-  display : block;
-
-  margin-bottom : 1rem;
-}
+.projects .projectsContainer .item1, .projects .projectsContainer .item2, .projects .projectsContainer .item3, .projects .projectsContainer .item4 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  min-width: 320px;
+  flex-basis: 35%;
+  height: 25vh;
+  margin: 4% 4%;
+  padding: 15px;
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  justify-content: center; }
+  .projects .projectsContainer .item1 h2, .projects .projectsContainer .item2 h2, .projects .projectsContainer .item3 h2, .projects .projectsContainer .item4 h2 {
+    margin-bottom: 1rem; }
+  .projects .projectsContainer .item1 p, .projects .projectsContainer .item2 p, .projects .projectsContainer .item3 p, .projects .projectsContainer .item4 p {
+    display: block;
+    margin-bottom: 1rem; }
 
 /* Global Styles */
 body::-webkit-scrollbar-track {
-  background-color : transparent;
-}
+  background-color: transparent; }
 
 body::-webkit-scrollbar {
-  width : 4px;
-
-  background-color : #3e3f3a;
-}
+  width: 4px;
+  background-color: #3e3f3a; }
 
 body::-webkit-scrollbar-thumb {
-  background-color : #c9c8b8;
-}
+  background-color: #c9c8b8; }
 
 .brand {
-  font-family : "Nunito", sans-serif;
-}
+  font-family: "Nunito", sans-serif; }
 
 html {
-  font-size : 16px;
-}
+  font-size: 16px; }
 
 body {
-  color : #333333;
-  font-size : 1rem;
-  line-height : 1.5;
-
-  margin : 0;
-  padding : 0;
-}
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0; }
 
 a {
-  transition : 0.5s all;
-  text-decoration : none;
-}
+  transition: 0.5s all;
+  text-decoration: none; }
 
 li {
-  list-style : none;
-  list-style-image : none;
-}
+  list-style: none;
+  list-style-image: none; }
 
 h1 {
-  font-size : 2rem;
-
-  margin : 1rem 0;
-
-  text-align : center;
-}
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center; }
 
 h2 {
-  font-size : 1.8rem;
-
-  margin : 1rem 0;
-}
+  font-size: 1.8rem;
+  margin: 1rem 0; }
 
 h3 {
-  font-size : 1.6rem;
-}
+  font-size: 1.6rem; }
 
 h4 {
-  font-size : 1.4rem;
-}
+  font-size: 1.4rem; }
 
 h5 {
-  font-size : 1.2rem;
-}
+  font-size: 1.2rem; }
 
 /*  Parent Overlay  */
 body {
-  overflow-x : hidden;
-}
+  overflow-x: hidden; }
 
 .gridContainer {
-  display : grid;
-
-  grid-template-areas : " landing landing landing                 landing landing landing "
-  " purpose purpose purpose                 purpose purpose purpose "
-  " getInvolved getInvolved getInvolved     getInvolved discord discord "
-  " projects projects projects              projects projects projects ";
-  grid-template-columns : [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
-  grid-template-rows : 100vh 100vh auto auto;
-}
-@media screen and (max-width: 830px) {
-  .gridContainer {
-    grid-template-areas : " landing "
-    " purpose "
-    " getInvolved "
-    " discord "
-    " projects "; 
-    grid-template-columns : 100%;
-    grid-template-rows : 100vh auto auto auto auto;
-  }
-}
+  display: grid;
+  grid-template-areas: " landing landing landing                 landing landing landing "
+ " purpose purpose purpose                 purpose purpose purpose "
+ " getInvolved getInvolved getInvolved     getInvolved discord discord "
+ " projects projects projects              projects projects projects ";
+  grid-template-columns: [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
+  grid-template-rows: 100vh 100vh auto auto; }
+  @media screen and (max-width: 830px) {
+    .gridContainer {
+      grid-template-columns: 100%;
+      grid-template-rows: 100vh auto auto auto auto;
+      grid-template-areas: " landing "
+ " purpose "
+ " getInvolved "
+ " discord "
+ " projects "; } }
 
 .landing {
-  grid-area : landing;
-}
+  grid-area: landing; }
 
 .purpose {
-  grid-area : purpose;
-}
+  grid-area: purpose; }
 
 .getInvolved {
-  grid-area : getInvolved;
-}
+  grid-area: getInvolved; }
 
 .discord {
-  grid-area : discord;
-}
+  grid-area: discord; }
 
 .projects {
-  grid-area : projects;
-}
+  grid-area: projects; }
 
 /*   Sections   */
 .landing {
-  display : flex;
-  flex-direction : column;
-
-  align-items : center;
-  justify-content : center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .subhead {
-  font-size : 18px;
-
-  text-align : center;
-}
+  font-size: 18px;
+  text-align: center; }
 
 .purpose {
-  text-align : center;
-}
-.purpose div {
-  font-size : 20px; 
-
-  margin-top : 3rem;
-}
+  color: white;
+  text-align: center;
+  background-color: #1d222c; }
+  .purpose div {
+    font-size: 20px;
+    margin-top: 3rem; }
 
 .discord-widget {
-  border-color : #1daf39 !important;
-}
+  border-color: #1daf39 !important; }
 
 .discord {
-  display : grid;
-
-  border-radius : 1rem;
-  box-shadow : 1px 0 1px 0 rgba(0, 0, 0, 0.2);
-
-  grid-template-areas : ". . . . . .  "
-  ". . btn btn btn ."
-  ". . widget widget widget .  "
-  ". . . . . .  ";
-  grid-template-columns : [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
-  grid-template-rows : 0.5fr 1fr 1fr 0.5fr;
-}
-@media screen and (max-width: 830px) {
-  .discord {
-    padding : 4%;
-
-    grid-row-gap : 20px; 
-    grid-template-areas : " btn "
-    " widget ";
-    grid-template-columns : 100%;
-    grid-template-rows : 50% 50%;
-  }
-}
-.discord a.btn {
-  color : #333333;
-
-  padding : 1rem;
-
-  -webkit-transition : background-image 0.2s ease-in-out;
-          transition : background-image 0.2s ease-in-out;
-  text-align : center;
-
-  border : 0;
-  border-radius : 4px;
-  background-image : linear-gradient(15deg, #1daf39, #01ff30);
-  box-shadow : 0 4px 3px 2px rgba(0, 0, 0, 0.2); 
-
-  grid-area : btn;
-}
-.discord a.btn:hover {
-  color : white;
-
-  background-image : linear-gradient(15deg, #a31153, #ff0172);
-}
-.discord .widget {
-  position : relative;
-
-  overflow-y : scroll;
-
-  grid-area : widget;
-}
-.discord .widget .container {
-  max-height : 20rem;
-}
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.2);
+  display: grid;
+  border-radius: 1rem;
+  grid-template-areas: ". . . . . .  "
+ ". . btn btn btn ."
+ ". . widget widget widget .  "
+ ". . . . . .  ";
+  grid-template-columns: [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr;
+  grid-template-rows: .5fr 1fr 1fr .5fr; }
+  @media screen and (max-width: 830px) {
+    .discord {
+      padding: 4%;
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: " btn "
+ " widget ";
+      grid-row-gap: 20px; } }
+  .discord a.btn {
+    color: #333;
+    padding: 1rem;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    background-image: linear-gradient(15deg, #1daf39, #01ff30);
+    grid-area: btn;
+    box-shadow: 0px 4px 3px 2px rgba(0, 0, 0, 0.2); }
+    .discord a.btn:hover {
+      color: white;
+      background-image: linear-gradient(15deg, #a31153, #ff0172); }
+  .discord .widget {
+    position: relative;
+    overflow-y: scroll;
+    grid-area: widget; }
+    .discord .widget .container {
+      max-height: 20rem; }
 
 .widget::-webkit-scrollbar-track {
-  background-color : transparent;
-}
+  background-color: transparent; }
 
 .widget::-webkit-scrollbar {
-  width : 4px;
-
-  background-color : #3e3f3a;
-}
+  width: 4px;
+  background-color: #3e3f3a; }
 
 .widget::-webkit-scrollbar-thumb {
-  background-color : #c9c8b8;
-}
+  background-color: #c9c8b8; }
 
 .getInvolved {
-  border-radius : 1rem;
-  box-shadow : 1px 0 1px 0 rgba(0, 0, 0, 0.2);
-}
-.getInvolved .getInvolvedGridContainer {
-  display : grid;
-
-  align-items : center; 
-  grid-template-areas : ". . one one one . ."
-  ". . two two two . ."
-  ". . three three three . ."
-  ". four four . five five ."
-  ". . six six six . .";
-  grid-template-columns : [col-1] 0.5fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr [col-7] 0.5fr;
-  grid-template-rows : 1fr 1fr 1fr 1fr 1fr;
-}
-@media screen and (max-width: 830px) {
+  border-radius: 1rem;
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.2); }
   .getInvolved .getInvolvedGridContainer {
-    grid-template-areas : ". . one one one . ."
-    ". . two two two . ."
-    ". . three three three . ."
-    ". four four . five five ."
-    ". . six six six . .";
-    grid-template-columns : 0fr 1fr 1fr 1fr 1fr 1fr 0fr; 
-    grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-}
+    display: grid;
+    grid-template-areas: ". . one one one . ."
+ ". . two two two . ."
+ ". . three three three . ."
+ ". four four . five five ."
+ ". . six six six . .";
+    grid-template-columns: [col-1] 0.5fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5] 1fr [col-6] 1fr [col-7] 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center; }
+    @media screen and (max-width: 830px) {
+      .getInvolved .getInvolvedGridContainer {
+        grid-template-areas: ". . one one one . ."
+ ". . two two two . ."
+ ". . three three three . ."
+ ". four four . five five ."
+ ". . six six six . .";
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr 0fr; } }
 
 .one {
-  font-size : 1.2rem;
-
-  padding : 2rem 1rem;
-
-  text-align : center;
-
-  border-radius : 1rem;
-  box-shadow : 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-
-  grid-area : one;
-}
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  grid-area: one; }
 
 .two {
-  font-size : 1.2rem;
-
-  padding : 2rem 1rem;
-
-  text-align : center;
-
-  border-radius : 1rem;
-  box-shadow : 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-
-  grid-area : two;
-}
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  grid-area: two; }
 
 .three {
-  font-size : 1.2rem;
-
-  padding : 2rem 1rem;
-
-  text-align : center;
-
-  border-radius : 1rem;
-  box-shadow : 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-
-  grid-area : three;
-}
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  grid-area: three; }
 
 .four {
-  font-size : 1.2rem;
-
-  padding : 2rem 1rem;
-
-  text-align : center;
-
-  border-radius : 1rem;
-  box-shadow : 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-
-  grid-area : four;
-}
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  grid-area: four; }
 
 .five {
-  font-size : 1.2rem;
-
-  padding : 2rem 1rem;
-
-  text-align : center;
-
-  border-radius : 1rem;
-  box-shadow : 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-
-  grid-area : five;
-}
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  grid-area: five; }
 
 .six {
-  font-size : 2rem;
-
-  padding : 3rem 0rem; 
-
-  text-align : center;
-
-  grid-area : six;
-}
+  grid-area: six;
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem 0rem; }
 
 .projects {
-  margin-top : 20vh;
-  padding-right : 0; 
-  padding-left : 0;
-}
-.projects .projectsContainer {
-  display : flex;
-
-  max-width : 100%;
-
-  flex-wrap : wrap;
-}
-@media screen and (max-width: 830px) {
+  margin-top: 20vh;
+  padding-left: 0;
+  padding-right: 0; }
   .projects .projectsContainer {
-    flex-direction : row;
-  }
-}
-.projects .projectsContainer .item1 {
-  background : linear-gradient(15deg, #64e1b5, #9cd8dc);
-}
-.projects .projectsContainer .item2 {
-  background : linear-gradient(15deg, #e5768a, #e2b9ac);
-}
-.projects .projectsContainer .item3 {
-  background : linear-gradient(15deg, #03c588, #1dcade);
-}
-.projects .projectsContainer .item4 {
-  background : linear-gradient(15deg, #74a890, #a5aaaa);
-}
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 830px) {
+      .projects .projectsContainer {
+        flex-direction: row; } }
+    .projects .projectsContainer .item1 {
+      background: linear-gradient(15deg, #64e1b5, #9cd8dc); }
+    .projects .projectsContainer .item2 {
+      background: linear-gradient(15deg, #e5768a, #e2b9ac); }
+    .projects .projectsContainer .item3 {
+      background: linear-gradient(15deg, #03c588, #1dcade); }
+    .projects .projectsContainer .item4 {
+      background: linear-gradient(15deg, #74a890, #a5aaaa); }
